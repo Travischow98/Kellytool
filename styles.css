@@ -1,0 +1,116 @@
+:root {
+  --malbon-green: #18382f;
+  --malbon-cream: #f4efe5;
+  --malbon-sage: #d6decc;
+  --malbon-gold: #d8b26e;
+  --ink: #1c1f1c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Inter", "Avenir Next", "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top, #234a3d 0%, #132a23 50%, #0f211c 100%);
+  color: var(--ink);
+  display: grid;
+  place-items: center;
+  padding: 2rem 1rem;
+}
+
+.app-shell {
+  width: min(760px, 100%);
+  display: grid;
+  gap: 1rem;
+}
+
+.hero,
+.card {
+  background: var(--malbon-cream);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  padding: 1.4rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  color: var(--malbon-green);
+  margin: 0;
+}
+
+h1 {
+  margin: 0.5rem 0;
+  line-height: 1.2;
+}
+
+.subtitle {
+  margin: 0;
+  color: #3f4b44;
+}
+
+.controls {
+  display: grid;
+  gap: 1rem;
+}
+
+.field {
+  display: grid;
+  gap: 0.4rem;
+  font-weight: 600;
+}
+
+input[type="number"] {
+  border: 1px solid #9ca89a;
+  background: #fff;
+  border-radius: 10px;
+  padding: 0.7rem 0.8rem;
+  font-size: 1rem;
+}
+
+input[type="number"]:focus {
+  outline: 2px solid var(--malbon-gold);
+  border-color: transparent;
+}
+
+.fractions {
+  border: 1px solid #adb9ac;
+  border-radius: 10px;
+  padding: 0.8rem;
+  background: var(--malbon-sage);
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.fractions legend {
+  padding: 0 0.4rem;
+  font-weight: 700;
+}
+
+.output {
+  text-align: center;
+  border: 2px solid var(--malbon-green);
+}
+
+.label {
+  margin: 0;
+  color: #3f4b44;
+}
+
+.amount {
+  margin: 0.5rem 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  color: var(--malbon-green);
+}
+
+.explanation {
+  margin: 0;
+  color: #46544d;
+}
